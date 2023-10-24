@@ -74,7 +74,7 @@ body {
 /*----------------------- end navbar -------------------------*/
 
 /*----------------------- content 1 -------------------------*/
-/* @keyframes slideInLeft {
+ @keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
   }
@@ -90,7 +90,7 @@ body {
   100% {
     transform: translateX(0);
   }
-} */
+} 
 
 #imgComp {
   display: none !important;
@@ -297,7 +297,7 @@ body {
   }
 
   #contHi {
-    height: 450px !important;
+    height: 455px !important;
     width: auto;
     padding: 30px !important;
   }
@@ -308,7 +308,7 @@ body {
   }
 
   #contIcon {
-    height: 450px !important;
+    height: 455px !important;
     width: auto;
     padding: 15px !important;
   }
@@ -384,7 +384,7 @@ body {
   }
 
   #contHi {
-    height: 450px !important;
+    height: 455px !important;
     width: auto;
     padding: 30px !important;
   }
@@ -395,7 +395,7 @@ body {
   }
 
   #contIcon {
-    height: 450px !important;
+    height: 455px !important;
     width: auto;
     padding: 15px !important;
   }
