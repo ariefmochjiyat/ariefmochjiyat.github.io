@@ -1,0 +1,434 @@
+body {
+  background-color: #EBEBEB;
+  color: #000065;
+  padding: 10px;
+}
+
+  /* .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+  }
+
+  .spinner {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 1px solid #575757;
+    border-top-color: #ffffff;
+    animation: spinner .9s linear infinite;
+  }
+
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  } */
+
+
+/*----------------------- navbar -------------------------*/
+.blog-header-logo {
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 20px;
+    color: #000065 !important;
+}
+
+.navbar-toggler {
+  box-shadow: unset !important;
+}
+
+#btnprofile {
+  text-decoration: none !important;
+  color: #000065;
+  border: 1px solid #000065;
+}
+
+#btnprofile:hover {
+  background-color: #000065;
+  color: white;
+}
+/*----------------------- end navbar -------------------------*/
+
+/*----------------------- content 1 -------------------------*/
+/* @keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+#imgComp {
+  display: none !important;
+}
+
+.fa-github:hover {
+  color: #007bff !important;
+}
+
+.fa-behance:hover {
+  color: #007bff !important;
+}
+
+.fa-instagram:hover {
+  color: #007bff !important;
+}
+
+#contHi {
+  animation: 1s ease-out 0s 1 slideInLeft;
+  background-color: #000065;
+  color: white;
+  height: 250px !important;
+  width: auto;
+  padding: 50px;
+}
+
+#iconskill {
+ margin-top: 5px;
+ margin-left: 10px;
+}
+
+.btn-label {
+  position: relative;
+  left: -8px;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 2px 0 0 2px;
+}
+
+.btn-labeled {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#rowIcon {
+  /* background-color: red; */
+  padding: 5px 5px 5px 5px ;
+}
+
+#contIcon {
+  animation: 1s ease-out 0s 1 slideInRight;
+  background-color: #000065;
+  color: white;
+  height: 250px !important;
+  width: auto;
+  padding: 10px 15px 10px 15px; 
+}
+/*----------------------- end content 1 -------------------------*/
+
+/*----------------------- content 2 -------------------------*/
+
+@keyframes openWidth {
+  from {
+    scale: 0%;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#content2 {
+  animation: 1s ease-out 0s 1 openWidth;
+}
+
+#btnSosmed {
+  border: 1px solid #000065;
+}
+
+#btnSosmed:hover {
+  background-color: #000065;
+  color: white;
+}
+/*----------------------- end content 2 -------------------------*/
+
+/*-------------------------- carousel ------------------------------*/
+.carousel {
+  margin-bottom: 4rem;
+  background-color: #000065;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  /* z-index: 10; */
+}
+
+.carousel-item {
+  height: 20rem;
+}
+/*------------------------ end carousel ------------------------------*/
+
+/*------------------------ lightbox ------------------------------*/
+.card:hover {
+  filter: brightness(80%);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  /* Start with 0 opacity */
+  transition: opacity 0.3s, max-width 0.3s;
+  /* Add max-width transition */
+}
+
+.lightbox img {
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  /* Updated to 80% */
+  max-height: calc(100% - 12px);
+  /* Adjusted for a 6px white margin */
+  border: 6px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.navigation-buttons {
+  position: absolute;
+  justify-content: center !important;
+  align-items: center !important;
+  top: 50%;
+  padding-bottom: 8px !important;
+  transform: translateY(-50%);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 44px;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 5px;
+}
+
+.prev-button {
+  right: auto;
+  left: 30px;
+}
+
+.next-button {
+  left: auto;
+  right: 30px;
+}
+/*------------------------ end lightbox ------------------------------*/
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+  /*----------------------- menu button toogle -------------------------*/
+  .bar {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000065;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(5px) rotate(45deg);
+      transform: translateY(5px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-9px) rotate(-45deg);
+      transform: translateY(-9px) rotate(-45deg);
+  }
+  /*----------------------- end menu button toogle -------------------------*/
+
+  /*----------------------- content 1 -------------------------*/
+  #imgComp {
+    display: block !important;
+    background: rgba(255, 255, 255);
+    margin-bottom: 15px;
+  }
+
+  #contHi {
+    height: 450px !important;
+    width: auto;
+    padding: 30px !important;
+  }
+
+  #socialicon {
+    width: 60% !important; 
+    height: auto !important;
+  }
+
+  #contIcon {
+    height: 450px !important;
+    width: auto;
+    padding: 15px !important;
+  }
+
+  #rowicon {
+    margin-top: 10px;
+  }
+
+  #wordicon {
+    display: flex;
+    font-size: 23px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  /*----------------------- end content 1 -------------------------*/
+  
+  #content2 {
+    margin-top: 3px !important;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  /*----------------------- menu header -------------------------*/
+  #menuHeader {
+    z-index: 10 !important;
+    background-color: #EBEBEB;
+    position: fixed;
+    margin-top: -10px;
+    padding-top: 10px !important;
+    left: 0;
+    right: 0;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .bar {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000065;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(5px) rotate(45deg);
+      transform: translateY(5px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-9px) rotate(-45deg);
+      transform: translateY(-9px) rotate(-45deg);
+  }
+  /*----------------------- end menu header -------------------------*/
+
+  /*----------------------- content 1 -------------------------*/
+  #content1 {
+    margin-top: 72px;
+  }
+
+  #imgComp {
+    display: block !important;
+    background: rgba(255, 255, 255);
+    margin-bottom: 15px;
+    /* background: rgba(255, 255, 255, .7); */
+  }
+
+  #contHi {
+    height: 450px !important;
+    width: auto;
+    padding: 30px !important;
+  }
+
+  #socialicon {
+    width: 60% !important; 
+    height: auto !important;
+  }
+
+  #contIcon {
+    height: 450px !important;
+    width: auto;
+    padding: 15px !important;
+  }
+
+  #rowicon {
+    margin-top: 10px;
+  }
+
+  #wordicon {
+    display: flex;
+    font-size: 23px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  /*----------------------- end content 1 -------------------------*/
+
+  /*----------------------- content 2 -------------------------*/
+  #content2 {
+    margin-top: 15px !important;
+  }
+  /*----------------------- end content 2 -------------------------*/
+
+  #colcontact {
+    margin-top: -45px !important;
+    margin-bottom: -45px !important;
+  }
+
+  #foot {
+    margin-top: 45px !important;
+  }
+
+  #foot2 {
+    padding-bottom: 0px !important;
+  }
+
+}
