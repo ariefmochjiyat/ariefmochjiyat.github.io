@@ -386,7 +386,7 @@ body {
   #contHi {
     height: 455px !important;
     width: auto;
-    padding: 30px !important;
+    padding: 25px 30px 30px 30px !important;
   }
 
   #socialicon {
